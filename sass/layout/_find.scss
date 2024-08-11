@@ -1,0 +1,320 @@
+.find {
+    padding-top: 120px;
+
+    &-title {
+        width: 460px;
+        color: $textColor;
+        font-family: "Fira Sans";
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 900;
+        line-height: normal;
+    }
+
+    &-subtitle {
+        width: 460px;
+        color: $textColor;
+        font-family: "Fira Sans";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        margin-top: 15px;
+    }
+}
+
+.bunner-input-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 447px;
+    height: 70px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 0.10);
+    background-color: #FFF;
+    box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.10);
+    padding: 10px;
+}
+
+.bunner-input {
+    padding-left: 25px;
+    color: #B2B2B2;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+}
+
+.bunner-btn {
+    content: "Искать вакансии";
+    color: #FFF;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #1A75E8;
+    border: none;
+    transition: 0.1s ease;
+
+    &:active {
+        background-color: #1a77e8a8;
+    }
+}
+
+.example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &-title {
+        color: #B2B2B2;
+        font-family: "Fira Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        margin-top: 20px;
+    }
+
+    &-list {
+        display: flex;
+        margin-top: 30px;
+        padding-bottom: 228px;
+        gap: 10px;
+    }
+
+    &-item {
+        color: #B2B2B2;
+        font-family: "Fira Sans";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 5px 10px;
+        border-radius: 5px;
+        border: 1px solid #B2B2B2;
+        transition: 0.2s ease;
+
+        &:hover {
+            color: #1a77e8a8;
+            border: 1px solid #1a77e8a8;
+        }
+    }
+}
+
+.sec {
+    background: url('../img/hero-image.png'), #F2F3F6;
+    background-repeat: no-repeat;
+    background-size: 544px 577px;
+    background-position: 600px 50px;
+}
+
+@media screen and (min-width: 320px) {
+    .find {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        padding-top: 45px;
+        padding-bottom: 387px;
+
+        &-title {
+            width: 235px;
+            color: $textColor;
+            font-family: "Fira Sans";
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        }
+
+        &-subtitle {
+            width: 290px;
+            color: $textColor;
+            font-family: "Fira Sans";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            margin-top: 20px;
+            text-align: center;
+        }
+    }
+
+    .bunner-input-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 290px;
+        height: 70px;
+        margin-top: 30px;
+        border-radius: 5px;
+        border: 1px solid rgba(209, 209, 209, 0.10);
+        background-color: #FFF;
+        box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.10);
+        padding: 10px;
+    }
+
+    .bunner-input {
+        padding-left: 25px;
+        width: 151px;
+        color: #B2B2B2;
+        font-family: "Fira Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+    }
+
+    .bunner-btn {
+        content: "";
+        background-image: url('/img/search.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        width: 68px;
+        height: 45px;
+        border-radius: 5px;
+        background-color: #1A75E8;
+        border: none;
+        transition: 0.1s ease;
+    }
+
+    .sec {
+        background: url('../img/hero-image.png'), #F2F3F6;
+        background-repeat: no-repeat;
+        background-size: 252px 259px;
+        background-position: 80px 450px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+
+    .find {
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+
+        &-title {
+            width: 460px;
+            color: $textColor;
+            font-family: "Fira Sans";
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 900;
+            line-height: normal;
+        }
+
+        &-subtitle {
+            width: 460px;
+            color: $textColor;
+            font-family: "Fira Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            margin-top: 15px;
+            text-align: start;
+        }
+    }
+
+    .bunner-input-wrap {
+        display: flex;
+        justify-content: space-between;
+        width: 447px;
+        height: 70px;
+        margin-top: 30px;
+        border-radius: 5px;
+        border: 1px solid rgba(209, 209, 209, 0.10);
+        background-color: #FFF;
+        box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.10);
+        padding: 10px;
+    }
+
+    .bunner-input {
+        padding-left: 25px;
+        color: #B2B2B2;
+        font-family: "Fira Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border: none;
+        width: 175px;
+    }
+
+    .bunner-btn {
+        position: relative;
+        background-image: none;
+        width: 211px;
+        height: 49px;
+        font-family: "Fira Sans";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 15px 30px;
+        border-radius: 5px;
+        background-color: #1A75E8;
+        border: none;
+        transition: 0.1s ease;
+
+        &::after {
+            content: "Искать вакансии";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: #FFF;
+            width: 126px;
+            font-size: 16px;
+            font-family: "Fira Sans", sans-serif;
+            font-weight: 400;
+        }
+
+        &:active {
+            background-color: #1a77e8a8;
+        }
+    }
+
+    .example {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+
+        &-title {
+            color: #B2B2B2;
+            font-family: "Fira Sans";
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-top: 35px;
+        }
+
+        &-subtitle {
+            width: 460px;
+            color: $textColor;
+            font-family: "Fira Sans";
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 140%;
+            margin-top: 30px;
+            text-align: start;
+        }
+
+    }
+
+    .sec {
+        background: url('../img/hero-image.png'), #F2F3F6;
+        background-repeat: no-repeat;
+        background-size: 544px 577px;
+        background-position: 600px 50px;
+    }
+}
+
+// =============================================

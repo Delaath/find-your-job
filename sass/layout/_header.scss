@@ -1,0 +1,110 @@
+.div-logo {
+    display: flex;
+    align-items: center;
+}
+
+.svg-logo {
+    width: 30px;
+    height: 30px;
+    margin-right: 8px;
+}
+
+.logo-1 {
+    color: #111238;
+    font-family: "Fira Sans";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.logo-2 {
+    color: rgba(26, 117, 232, 1);
+    margin-left: 1px;
+}
+
+.nav-item {
+    @extend %text;
+    transition: 0.3s ease;
+
+    &:hover {
+        color: $buttonsCoolor;
+    }
+}
+
+.nav-button {
+    @extend %text;
+    border: none;
+    padding: 15px 30px;
+    transition: 0.3s ease;
+    border-radius: 5px;
+    background-color: #f2f3f6;
+
+    &:hover {
+        background-color: $buttonsCoolor;
+        color: #FFF;
+    }
+
+    &:active {
+        background-color: #1a77e8c7;
+    }
+}
+
+
+// ============================================
+
+
+@media screen and (min-width: 320px) {
+    body {
+        background-color: #F2F3F6;
+    }
+
+    .div-logo {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .header {
+        display: flex;
+        padding-top: 30px;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .burger {
+        fill: black;
+        width: 34px;
+        height: 16px;
+        padding-right: 10px;
+    }
+
+    .nav-list {
+        display: none;
+    }
+}
+
+
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .header {
+        display: flex;
+        padding-top: 50px;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #F2F3F6;
+    }
+
+    .burger {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        gap: 20px;
+    }
+}

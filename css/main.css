@@ -1,0 +1,437 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans:regular,700,900&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+main,
+body,
+p,
+ol,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+
+.nav-button, .nav-item {
+  color: #111238;
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media screen and (min-width: 320px) {
+  .container {
+    padding: 0 15px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .container {
+    width: 1145px;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}
+.div-logo {
+  display: flex;
+  align-items: center;
+}
+
+.svg-logo {
+  width: 30px;
+  height: 30px;
+  margin-right: 8px;
+}
+
+.logo-1 {
+  color: #111238;
+  font-family: "Fira Sans";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.logo-2 {
+  color: rgb(26, 117, 232);
+  margin-left: 1px;
+}
+
+.nav-item {
+  transition: 0.3s ease;
+}
+.nav-item:hover {
+  color: #1A75E8;
+}
+
+.nav-button {
+  border: none;
+  padding: 15px 30px;
+  transition: 0.3s ease;
+  border-radius: 5px;
+  background-color: #f2f3f6;
+}
+.nav-button:hover {
+  background-color: #1A75E8;
+  color: #FFF;
+}
+.nav-button:active {
+  background-color: rgba(26, 119, 232, 0.7803921569);
+}
+
+@media screen and (min-width: 320px) {
+  body {
+    background-color: #F2F3F6;
+  }
+  .div-logo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .header {
+    display: flex;
+    padding-top: 30px;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .burger {
+    fill: black;
+    width: 34px;
+    height: 16px;
+    padding-right: 10px;
+  }
+  .nav-list {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  body {
+    background-color: #ffffff;
+  }
+  .header {
+    display: flex;
+    padding-top: 50px;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #F2F3F6;
+  }
+  .burger {
+    display: none;
+  }
+  .nav-list {
+    display: flex;
+    gap: 20px;
+  }
+}
+.find {
+  padding-top: 120px;
+}
+.find-title {
+  width: 460px;
+  color: #111238;
+  font-family: "Fira Sans";
+  font-size: 44px;
+  font-style: normal;
+  font-weight: 900;
+  line-height: normal;
+}
+.find-subtitle {
+  width: 460px;
+  color: #111238;
+  font-family: "Fira Sans";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 15px;
+}
+
+.bunner-input-wrap {
+  display: flex;
+  justify-content: space-between;
+  width: 447px;
+  height: 70px;
+  margin-top: 30px;
+  border-radius: 5px;
+  border: 1px solid rgba(209, 209, 209, 0.1);
+  background-color: #FFF;
+  box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.1);
+  padding: 10px;
+}
+
+.bunner-input {
+  padding-left: 25px;
+  color: #B2B2B2;
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border: none;
+}
+
+.bunner-btn {
+  content: "Искать вакансии";
+  color: #FFF;
+  font-family: "Fira Sans";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 15px 30px;
+  border-radius: 5px;
+  background-color: #1A75E8;
+  border: none;
+  transition: 0.1s ease;
+}
+.bunner-btn:active {
+  background-color: rgba(26, 119, 232, 0.6588235294);
+}
+
+.example {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.example-title {
+  color: #B2B2B2;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin-top: 20px;
+}
+.example-list {
+  display: flex;
+  margin-top: 30px;
+  padding-bottom: 228px;
+  gap: 10px;
+}
+.example-item {
+  color: #B2B2B2;
+  font-family: "Fira Sans";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid #B2B2B2;
+  transition: 0.2s ease;
+}
+.example-item:hover {
+  color: rgba(26, 119, 232, 0.6588235294);
+  border: 1px solid rgba(26, 119, 232, 0.6588235294);
+}
+
+.sec {
+  background: url("../img/hero-image.png"), #F2F3F6;
+  background-repeat: no-repeat;
+  background-size: 544px 577px;
+  background-position: 600px 50px;
+}
+
+@media screen and (min-width: 320px) {
+  .find {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 45px;
+    padding-bottom: 387px;
+  }
+  .find-title {
+    width: 235px;
+    color: #111238;
+    font-family: "Fira Sans";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .find-subtitle {
+    width: 290px;
+    color: #111238;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 20px;
+    text-align: center;
+  }
+  .bunner-input-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 290px;
+    height: 70px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    background-color: #FFF;
+    box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.1);
+    padding: 10px;
+  }
+  .bunner-input {
+    padding-left: 25px;
+    width: 151px;
+    color: #B2B2B2;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+  }
+  .bunner-btn {
+    content: "";
+    background-image: url("/img/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 68px;
+    height: 45px;
+    border-radius: 5px;
+    background-color: #1A75E8;
+    border: none;
+    transition: 0.1s ease;
+  }
+  .sec {
+    background: url("../img/hero-image.png"), #F2F3F6;
+    background-repeat: no-repeat;
+    background-size: 252px 259px;
+    background-position: 80px 450px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .find {
+    padding-top: 120px;
+    display: flex;
+    flex-direction: column;
+  }
+  .find-title {
+    width: 460px;
+    color: #111238;
+    font-family: "Fira Sans";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+  }
+  .find-subtitle {
+    width: 460px;
+    color: #111238;
+    font-family: "Fira Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 15px;
+    text-align: start;
+  }
+  .bunner-input-wrap {
+    display: flex;
+    justify-content: space-between;
+    width: 447px;
+    height: 70px;
+    margin-top: 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(209, 209, 209, 0.1);
+    background-color: #FFF;
+    box-shadow: 0px 4px 25px 0px rgba(15, 17, 56, 0.1);
+    padding: 10px;
+  }
+  .bunner-input {
+    padding-left: 25px;
+    color: #B2B2B2;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border: none;
+    width: 175px;
+  }
+  .bunner-btn {
+    position: relative;
+    background-image: none;
+    width: 211px;
+    height: 49px;
+    font-family: "Fira Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 15px 30px;
+    border-radius: 5px;
+    background-color: #1A75E8;
+    border: none;
+    transition: 0.1s ease;
+  }
+  .bunner-btn::after {
+    content: "Искать вакансии";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #FFF;
+    width: 126px;
+    font-size: 16px;
+    font-family: "Fira Sans", sans-serif;
+    font-weight: 400;
+  }
+  .bunner-btn:active {
+    background-color: rgba(26, 119, 232, 0.6588235294);
+  }
+  .example {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+  }
+  .example-title {
+    color: #B2B2B2;
+    font-family: "Fira Sans";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 35px;
+  }
+  .example-subtitle {
+    width: 460px;
+    color: #111238;
+    font-family: "Fira Sans";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-top: 30px;
+    text-align: start;
+  }
+  .sec {
+    background: url("../img/hero-image.png"), #F2F3F6;
+    background-repeat: no-repeat;
+    background-size: 544px 577px;
+    background-position: 600px 50px;
+  }
+}/*# sourceMappingURL=main.css.map */
